@@ -77,7 +77,7 @@ static void write_formula(FILE *fp, const Top* top, const Top* parent_top)
 
     if ( ((ValueTop*)top->element)->type == CONST)
     {
-        fprintf(fp, "%lf ", (((ValueTop*)top->element)->value).cnst);
+        fprintf(fp, "%lg ", (((ValueTop*)top->element)->value).cnst);
         return;
     }
 

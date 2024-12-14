@@ -3,18 +3,22 @@
 
 #include "differentiation.h"
 #include "read_expression.h"
-#include "dump.h"
+#include "print_expression.h"
+
 
 int main()
 {
     BynarTree tree = {};
     create_bynar_tree(&tree, sizeof(ValueTop));
 
-    converts_expression_tree(&tree);
+    ErrorDifferintiator error = converts_expression_tree(&tree);
+    if (error != ERROR_DIFF_NO)
+        return error;
 
     BynarTree tree1= {};
     create_bynar_tree(&tree1, sizeof(ValueTop));
 
     diff_and_simplifies_expressions(&tree, &tree1);
-    dump(&tree1, NULL, NULL);
+
+    return lateh_expression(&tree1, NULL);
 }

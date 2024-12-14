@@ -1,5 +1,5 @@
 FLAGS =
-EXEC_NAME  = differentiator.exe
+EXEC_NAME  = differintiator.exe
 SOURCE_DIR = source
 BUILD_DIR = build
 INC_DIR = include

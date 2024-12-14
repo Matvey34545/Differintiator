@@ -4,7 +4,6 @@
 #include <ctype.h>
 
 #include "read_expression.h"
-#include "dump.h"
 
 const char DIRECT_BRACKET = '(';
 const char REVERS_BRACKET = ')';

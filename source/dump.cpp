@@ -52,8 +52,10 @@ static ErrorDifferintiator create_png_file(const char *filename, const char *png
 
     int res = system(str);
     if (res != 0)
+    {
+        free(str);
         return ERROR_DIFF_BAD_GRAPHIS;
-
+    }
     free(str);
 
     return ERROR_DIFF_NO;
@@ -69,7 +71,6 @@ static ErrorDifferintiator create_dot_file(const char *filename, const BynarTree
         return ERROR_DIFF_OPEN_FILE;
 
     fprintf(fp, "digraph list{\nrankdir = HR\n");
-    printf("CREATE DOT\n");
 
     if (tree->root != NULL)
         create_dot_top(tree->root, fp);

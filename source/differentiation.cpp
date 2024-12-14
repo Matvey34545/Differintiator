@@ -3,7 +3,6 @@
 #include <math.h>
 
 #include "differentiation.h"
-#include "dump.h"
 
 const double DIFF_CONST      = 1.0;
 const double DIFF_CONST_NO_X = 0.0;

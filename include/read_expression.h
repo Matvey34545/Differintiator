@@ -12,7 +12,9 @@ enum ErrorDifferintiator
     ERROR_DIFF_BYNAR_TREE  = 4,
     ERROR_DIFF_BAD_GRAPHIS = 5,
     ERROR_DIFF_OPEN_FILE   = 6,
-    ERROR_DIFF_READ        = 7
+    ERROR_DIFF_READ        = 7,
+    ERROR_DIFF_BAD_PDF     = 8,
+    ERROR_DIFF_ALLOCATION  = 9
 };
 
 enum TypeOp

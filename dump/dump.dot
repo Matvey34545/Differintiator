@@ -1,5 +1,13 @@
 digraph list{
 rankdir = HR
-node0000017f6de916e0 [shape=Mrecord, style="filled",  label = "specific var: 0 | var: 0 |0.000000"]
+node0000027b4a351740 [shape=Mrecord, style="filled",  label = "specific var: 0 | var: 1 |MUL"]
+node0000027b4a356b00 [shape=Mrecord, style="filled",  label = "specific var: 0 | var: 0 |2.000000"]
+node0000027b4a356960 [shape=Mrecord, style="filled",  label = "specific var: 1 | var: 1 |PLUS"]
+node0000027b4a356b40 [shape=Mrecord, style="filled",  label = "specific var: 1 | var: 1 |x"]
+node0000027b4a356ae0 [shape=Mrecord, style="filled",  label = "specific var: 0 | var: 0 |1.000000"]
 edge[color=black]
+node0000027b4a351740->node0000027b4a356b00
+node0000027b4a351740->node0000027b4a356960
+node0000027b4a356960->node0000027b4a356b40
+node0000027b4a356960->node0000027b4a356ae0
 }
